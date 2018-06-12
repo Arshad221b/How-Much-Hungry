@@ -4,16 +4,12 @@ conn = sqlite3.connect('Database2222.db')
 c = conn.cursor()
 
 
-    
-#......................................................
 from tkinter import*
 
 import time
 
 
 
-    
-#.................appearance...............................
 window = Tk()
 window.geometry("800x500+0+0")
 window.title("ToMaTo")
@@ -32,7 +28,6 @@ lblinfo = Label(Tops, font=( 'aria' ,20, ),text=localtime,fg="steel blue",anchor
 lblinfo.grid(row=1,column=0)
 
 
-#..................buttons and widgets......................
 var1 = IntVar()
 def vegnonveg():
     return(var1.get())
@@ -48,7 +43,6 @@ R2 = Radiobutton(f1, font=( 'aria' ,16, ),text="NON VEG", variable=var1, value=2
                   anchor = E)
 R2.grid(row = 2,column= 0,sticky=W)
 
-#......................................................................
 var2 = IntVar()
 
 def type_():
@@ -74,7 +68,6 @@ A4 = Radiobutton(f1, font=( 'aria' ,16, ),text="south indian", variable=var2, va
 A4.grid(row = 4,column= 1,sticky=W)
 
 
-#.........................................................................
 min_cost = [0,50,100,150,200,250,300,350]
 max_cost = [50,100,150,200,250,300,350,400]
 
@@ -98,8 +91,6 @@ S2 = Spinbox(f1,from_ = max_cost[0],to = max_cost[7],increment = 50,font=( 'aria
 S2.grid(row = 3,column = 2,sticky = W)
 
 
-
-#....................................................................................
 var4 =IntVar()
 def hmh():
     return(var4.get())
@@ -122,16 +113,14 @@ H3.grid(row= 3,column=3,sticky=W)
 
 
 
-    
 
-#..................................................................................
 
 def  algorithm(vnv2,type2,hmh2,a2,b2):
 
 
     listofresult =[]
     i=0
-    c.execute("SELECT * FROM Database2222 WHERE hmh = ? AND vnv = ? AND type = ? AND cost BETWEEN ? AND ?",(hmh2,vnv2,type2,a2,b2))
+    c.execute("SELECT * FROM Database2222 WHERE hmh = ? AND vnv = ? AND type = ? AND cost BETWEEN ? AND ?(hmh2,vnv2,type2,a2,b2))
  
         
     for row  in c.fetchall():
@@ -144,7 +133,7 @@ def  algorithm(vnv2,type2,hmh2,a2,b2):
 
     return listofresult
 
-#.....................................................................................
+
 def result():
     vnv1 = vegnonveg()
     type1=type_()
