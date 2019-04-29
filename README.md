@@ -1,4 +1,4 @@
-<h1> FOOD SUGGESTER <h1>
+<h1> FOOD SUGGESTER </h1>
 This is the mini project for the MU Computer (sem4) for subject OSTL.
 
 <h3>Idea</h3>
