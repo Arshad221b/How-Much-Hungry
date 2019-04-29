@@ -15,5 +15,5 @@ This is the mini project for the MU Computer (sem4) for subject OSTL.
 <p>2. GUI:</p>
 <p>Tkinter is used to make the GUI for this project. It is the basic level GUI which is very easy to understand for beginner.</p>
 
-<h3>sites from where I learned this:</h3>
+<h3>Source:</h3>
  <link>https://www.youtube.com/watch?v=HjNHATw6XgY&list=PLQVvvaa0QuDclKx-QpC9wntnURXVJqLyk</link>
