@@ -1,3 +1,4 @@
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 <h1> FOOD SUGGESTER </h1>
 This is the mini project for the MU Computer (sem4) for subject OSTL.
 
